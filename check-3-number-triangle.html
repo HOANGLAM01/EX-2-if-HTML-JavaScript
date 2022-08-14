@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var a = prompt("Nhập độ dài cạnh thứ nhất");
+  var b = prompt("Nhập độ dài cạnh thứ hai");
+  var c = prompt('Nhập độ dài cạnh thứ ba');
+  Canh1 = parseInt(a);
+  Canh2 = parseInt(b);
+  Canh3 = parseInt(c);
+  if (Canh1 <= 0)
+    document.writeln("không phải một tam giác");
+  if (Canh2 <= 0)
+    document.writeln("không phải một tam giác");
+  if (Canh3 <= 0)
+    document.writeln("không phải một tam giác");
+  if (Canh1 + Canh2 >Canh3) {
+      if (Canh2 + Canh3 > Canh1) {
+          if (Canh1 + Canh3 > Canh2) {
+              document.writeln("là 3 cạnh của 1 tam giác");
+          } else
+              document.writeln("không phải là cạnh của 1 tam giác");
+      } else
+          document.writeln("không phải là cạnh của 1 tam giác");
+  } else
+      document.writeln("không phải là cạnh của 1 tam giác");
+</script>
+</body>
+</html>

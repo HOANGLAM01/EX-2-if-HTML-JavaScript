@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var Number1 = prompt("nhập số nhân với x bậc 2");
+  var Number2 = prompt("nhập số nhân với x bậc 1");
+  var Number3 = prompt("nhập số đi riêng");
+  Number01 = parseInt(Number1);
+  Number02 = parseInt(Number2);
+  Number03 = parseInt(Number3);
+  var x1 = null;
+  var x2 = null;
+  var delta = Number02 * Number02 - (4 * Number01 * Number03)
+  if (Number01 == 0){
+      if (Number02 == 0) {
+          if (Number03 == 0)
+              document.writeln("phương trình vô số nghiệm");
+          else
+              document.writeln("phương trình vô nghiệm")
+      } else
+          document.writeln("phương trình có 1 nghiệm x = " + (-Number03/Number02));
+  } else if (Number02 == 0) {
+      document.writeln(x1 = Math.sqrt(-Number03 / Number01));
+      document.writeln(x2 = Math.sqrt-(-Number03 / Number01));
+        } else if (delta > 0) {
+                document.writeln(x1 = (-Number02 + Math.sqrt(delta)) / (2 * Number01));
+                document.writeln(x2 = (-Number02 - Math.sqrt(delta)) / (2 * Number01));
+                }else if(delta == 0)
+                    document.writeln(x1 = x2 = -Number02 / (2 * Number01));
+                        else
+                            document.writeln("phương trình vô nghiệm");
+
+</script>
+</body>
+</html>
